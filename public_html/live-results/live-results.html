@@ -1,0 +1,9 @@
+<div ng-if='!liveResultsCtrl.finalResult&&liveResultsCtrl.result===true&&liveResultsCtrl.humanInput.length!==0'>
+    <img alt='Correct' src='live-results/tick.png' height="100" width="100">
+</div>
+<div ng-if='!liveResultsCtrl.finalResult&&liveResultsCtrl.result===false&&liveResultsCtrl.humanInput.length!==0'>
+    <img alt='Wrong' src='live-results/cross.png' height="100" width="100">
+</div>
+<div class='align-text-center blue-colour' ng-if='liveResultsCtrl.finalResult'>
+    {{liveResultsCtrl.finalResult}}
+</div>
