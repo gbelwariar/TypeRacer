@@ -82,7 +82,7 @@ describe('GamePlayCtrl', function() {
                });
             
             it(
-               'should start and end the computer input interval service',
+               'should complete the computer input interval service',
                function() {
                    ctrl.$onInit();
                    ctrl.toggleGameStatus();
