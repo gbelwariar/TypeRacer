@@ -1,0 +1,32 @@
+@import '../type-racer-style.css';
+
+.wrapper {
+  width: 100%;
+  clear: both;
+}
+
+.text-area {
+    width: 500px;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    margin-top: 15px;
+    background-color: #f8f8f8;
+    font-size: 30px;
+}
+
+.game-control-button-block {
+    width: 250px;
+}
+
+.game-control-start-button {
+    background-color: #4CAF50; /* Green colour */
+}
+
+.challenge-string {
+    font-family: Courier New;
+    font-size: 32px;
+    font-style: italic;
+}
