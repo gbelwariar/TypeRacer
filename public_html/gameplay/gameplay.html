@@ -1,0 +1,84 @@
+<div class='challenge-string vertical-separator-from-top-40'
+     ng-if='gamePlayCtrl.hasGameStarted'>
+    <b>"</b>{{gamePlayCtrl.challengeString}}<b>"</b>
+</div>
+<div class='wrapper vertical-separator-from-top-40'>
+    <!-- Human's game-play -->
+    <div class='horizontal-block'>
+        <div>
+            <label class='centre-left-text' for='human'>
+                <span class='medium-big-text'>You
+                    <span ng-show='gamePlayCtrl.playerName'>
+                        ({{gamePlayCtrl.playerName}})
+                    </span>
+                </span>
+            </label>
+        </div><br>
+        <div>
+            <textarea autofocus class='text-area' id='human'
+                ng-disabled='gamePlayCtrl.timerValue!==0'
+                ng-model='gamePlayCtrl.humanInput'>
+            </textarea></div>
+    </div>
+    <!-- Game control buttons -->
+    <div class='horizontal-block game-control-button-block
+         vertical-separator-from-top-110'>
+        <button class='submit big-button game-control-start-button'
+                ng-click='gamePlayCtrl.toggleGameStatus()'
+                ng-if='!gamePlayCtrl.hasGameStarted'>
+            Start
+        </button>
+        <button class='submit big-button game-control-reset-button'
+                ng-click='gamePlayCtrl.toggleGameStatus()'
+                ng-if='gamePlayCtrl.hasGameStarted'>
+            Reset
+        </button>
+        <!-- Timer -->
+        <div class='margin-left-90 big-text'
+             ng-if='gamePlayCtrl.hasGameStarted && gamePlayCtrl.timerValue!==0'>
+            <div ng-if='gamePlayCtrl.timerValue!==1'>
+                {{gamePlayCtrl.timerValue-1}}
+            </div>
+            <div ng-if='gamePlayCtrl.timerValue===1'>Go!</div>
+        </div>        
+        <!-- Live results and final result-->
+        <div class='margin-left-40 medium-small-text'>
+            <live-results ng-if='gamePlayCtrl.hasGameStarted'
+                          challenge-string='{{gamePlayCtrl.challengeString}}'
+                          human-input='{{gamePlayCtrl.humanInput}}'
+                          computer-input='{{gamePlayCtrl.computerInput}}'
+                          has-game-started=gamePlayCtrl.hasGameStarted>
+            </live-results>
+        </div>        
+    </div>
+    <!-- Computer's game-play -->
+    <div class='horizontal-block-width-400'>
+        <div>
+            <label class='centre-left-text' for='computer'>
+                <span class='medium-big-text'>Computer</span>
+            </label>
+        </div>
+        <div>
+            <textarea class='text-area' id='computer'
+                ng-disabled='true'
+                ng-model='gamePlayCtrl.computerInput'>
+            </textarea>
+        </div>
+    </div>
+    <div class='wrapper'>
+        <div class='horizontal-block medium-small-normal-text margin-right-98'>
+            Speed :
+            <span class='medium-big-text'>{{gamePlayCtrl.humanSpeed | number:2 }} 
+            </span>
+            chars/sec
+        </div>
+        <div class='horizontal-block-width-right-float-400 medium-small-normal-text'>
+            Speed : 
+            <span class='medium-big-text' ng-if='gamePlayCtrl.timerValue!==0'> 0.00 </span>
+            <span class='medium-big-text' ng-if='gamePlayCtrl.timerValue===0'>
+                {{gamePlayCtrl.selectedLevelSpeed | number:2 }}
+            </span>
+            <span>chars/sec</span>
+        </div>        
+    </div>
+</div>
