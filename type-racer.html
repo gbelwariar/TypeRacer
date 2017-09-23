@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='shortcut icon' href='favicon.ico'>
+    <link rel='stylesheet' href='type-racer-style.css'>
+    <link rel='stylesheet' href='gameplay/gameplay.css'>
+    <link rel='stylesheet' href='live-results/live-results.css'>
+    <title>Type Racer</title>
+    <script src='//code.angularjs.org/snapshot/angular.min.js'></script>
+    <script src='type-racer.js'></script>
+    <script src='services/dictionary-service.js'></script>
+    <script src='type-racer-controller.js'></script>
+    <script src='gameplay/gameplay-component.js'></script>
+    <script src='gameplay/gameplay-controller.js'></script>
+    <script src='live-results/live-results-component.js'></script>
+    <script src='live-results/live-results-controller.js'></script> 
+  </head>
+  <body ng-app='typeRacer'>
+    <div ng-controller='TypeRacerCtrl as typeRacerCtrl'>
+        <div class='heading-message align-text-center'>
+            Welcome to Type Racer
+        </div>
+        <div class='align-block-center vertical-separator-from-top-10'
+             ng-show='!typeRacerCtrl.shouldShowRacingPage'>
+            <form name='typeRacerForm'>
+                <div class='vertical-separator-from-bottom-10 label-message'>
+                    Choose difficulty level
+                </div>
+                <div class='vertical-separator-from-bottom-80'>
+                    <div ng-repeat='level in typeRacerCtrl.levels'>
+                        <label>
+                            <input name='difficultyLevel' type='radio'
+                                   value='{{level.levelName}}'
+                                   ng-model='typeRacerCtrl.selectedLevelName'
+                                   required='!typeRacerCtrl.selectedLevelName'>
+                            {{level.levelName}}
+                        </label>
+                    </div>
+                    <div ng-show='!typeRacerForm.$submitted'>
+                        <span class='invalidation-message'
+                              ng-show='typeRacerForm.difficultyLevel.$error.required'>
+                            Please select a difficulty level.
+                        </span>
+                    </div>                    
+                </div>
+                <div class='vertical-separator-from-bottom-80'>
+                    <label>
+                        <span class='label-message'>Enter your name</span>
+                        <input type='text' ng-model='typeRacerCtrl.playerName'>
+                    </label>
+                </div>
+                <div class='vertical-separator-from-bottom-80'>
+                    <button class='submit big-button' 
+                            ng-click='typeRacerCtrl.showRacingPage(typeRacerForm.$submitted
+                                        || (!typeRacerForm.difficultyLevel.$error.required))'>
+                        Enter
+                    </button>
+                </div>
+            </form>
+        </div>
+        <game-play player-name='{{typeRacerCtrl.playerName}}'
+                   selected-level-speed='typeRacerCtrl.selectedLevelSpeed'
+                   ng-if='typeRacerCtrl.shouldShowRacingPage'></game-play>
+    </div>
+  </body>
+</html>
