@@ -1,0 +1,139 @@
+.align-block-center {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin: -100px 0 0 -150px;
+}
+
+.align-text-center {
+    text-align: center;
+}
+
+.big-button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.submit {
+    background-color: #f44336; 
+    margin-left: 3.5em;
+}
+
+.vertical-separator-from-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.vertical-separator-from-bottom-80 {
+    margin-bottom: 80px;
+}
+
+.vertical-separator-from-top-10 {
+    margin-top: 10px;
+}
+
+.vertical-separator-from-top-40 {
+    margin-top: 30px;
+}
+
+.vertical-separator-from-top-110 {
+    margin-top: 110px;
+}
+
+.vertical-separator-from-top-150 {
+    margin-top: 150px;
+}
+
+.vertical-separator-from-top-250 {
+    margin-top: 250px;
+}
+
+.invalidation-message {
+    color: #f44336;
+}
+
+.heading-message {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.label-message {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.big-text {
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.medium-big-text {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.medium-small-text {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.medium-small-normal-text {
+    font-size: 40px;
+}
+
+.horizontal-block {
+  width: 500px;
+  float: left;    
+  margin-right: 33px;
+}
+
+.horizontal-block {
+  width: 500px;
+  float: left;    
+  margin-right: 33px;
+}
+
+.horizontal-block-width-right-float-400 {
+  width: 400px;
+  float: right;
+  margin-right: 100px;
+}
+
+.horizontal-block-width-400 {
+  width: 400px;
+  float: left; 
+}
+
+.horizontal-block-width-120 {
+  width: 120px;
+  float: left; 
+}
+
+.horizontal-block-width-180 {
+  width: 180px;
+  float: left; 
+  margin-left: 33px;
+}
+
+.margin-right-98 {    
+  margin-right: 98px;
+}
+
+.margin-left-90 {    
+  margin-left: 90px;
+}
+
+.margin-left-40 {    
+  margin-left: 40px;
+}
+
+.centre-left-text {
+    float: left;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+}
