@@ -19,11 +19,13 @@ A lightweight type-racing game (played against computer) built with JavaScript a
 
 ## Components of the Projects
 
-Name of the Component                                                                                         | Description
---------------------------------------------------------------------------------------------------------------| -------------------
-[**Home Screen**](https://github.com/gbelwariar/TypeRacer/blob/master/public_html/type-racer-controller.js)   | This is the component to which all the other components are loosely coupled with. It is responsible for the following tasks -<br/> 1) Fetching the difficulty level and name from the user playing the game.<br/> 2) Initialization of the game.
-[**Gameplay**](https://github.com/gbelwariar/TypeRacer/tree/master/public_html/gameplay)                      | Responsible for the following tasks -<br/> 1) Resetting the game variables everytime the game is reset.<br/> 2) Installation of the timer responsible for the count down till the game starts.<br/> 3) Calculation of the live speed of the human-entered input.<br/>                                                                                       
-[**Live Results**](https://github.com/gbelwariar/TypeRacer/tree/master/public_html/live-results)              | Responsible for the following tasks -<br/> 1) Displaying the live status which would reflect whether the text entered by the player matches with a prefix of the challenge string. If it matches then a tick (✔) otherwise a cross (✘) is displayed.<br/> 2) Declaring the winner of the game or if both finishes the game at the same time then the game is said to be drawn.                                                                                                           
+Name of the Component                                                                                                    | Description
+-------------------------------------------------------------------------------------------------------------------------| -------------
+[**Home Screen**](https://github.com/gbelwariar/TypeRacer/blob/master/public_html/type-racer-controller.js)              | This is the component to which all the other components are loosely coupled with. It is responsible for the following tasks -<br/> 1) Fetching the difficulty level and name from the user playing the game.<br/> 2) Initialization of the game.
+[**Gameplay**](https://github.com/gbelwariar/TypeRacer/tree/master/public_html/gameplay)                                 | Responsible for the following tasks -<br/> 1) Resetting the game variables everytime the game is reset.<br/> 2) Installation of the timer responsible for the count down till the game starts.<br/> 3) Calculation of the live speed of the human-entered input.<br/>                                                                                       
+[**Live Results**](https://github.com/gbelwariar/TypeRacer/tree/master/public_html/live-results)                         | Responsible for the following tasks -<br/> 1) Displaying the live status which would reflect whether the text entered by the player matches with a prefix of the challenge string. If it matches then a tick (✔) otherwise a cross (✘) is displayed.<br/> 2) Declaring the winner of the game or if both finishes the game at the same time then the game is said to be drawn.        
+
+[**Dictionary Service**](https://github.com/gbelwariar/TypeRacer/blob/master/public_html/services/dictionary-service.js) | Responsi
 
 
 
