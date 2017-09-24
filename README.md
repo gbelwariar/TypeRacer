@@ -8,16 +8,16 @@ Download the repository - [TypeRacer](https://github.com/gbelwariar/TypeRacer) a
 
 ## Screenshots
 
-### Home Page
+### → Home Page
 ![Home Page](/screenshots/Home_Page.GIF?raw=true "Home Page")
 
-### Before the game starts
+### → Before the game starts
 ![Before the game starts](/screenshots/Before_Game.GIF?raw=true "Before Game")
 
-### During the game (the below screenshot is of "Basic" difficulty level)
+### → During the game (the below screenshot is of "Basic" difficulty level)
 ![During the game](/screenshots/During_Game.GIF?raw=true "During Game")
 
-### When the game ends (the below screenshot is of "Basic" difficulty level)
+### → When the game ends (the below screenshot is of "Basic" difficulty level)
 ![When the game ends](/screenshots/End_Game.GIF?raw=true "End Game")
 
 ## Languages/Frameworks Used - 
