@@ -2,6 +2,24 @@
 # TypeRacer
 A lightweight type-racing game (played against computer) built with JavaScript and AngularJS framework that can be played in a browser itself (**Requires no installation, internet-connection!**).
 
+## How to play the game 
+
+Download the repository - [TypeRacer](https://github.com/gbelwariar/TypeRacer) and execute the HTML file - **type-racer.html** (*TypeRacer/public_html/type-racer.html*) through the local host using any browser.
+
+## Screenshots
+
+### Home Page
+![Home Page](/screenshots/Home_Page.GIF?raw=true "Home Page")
+
+### Before the game starts
+![Before the game starts](/screenshots/Before_Game.GIF?raw=true "Before Game")
+
+### During the game (the below screenshot is of "Basic" difficulty level)
+![During the game](/screenshots/During_Game.GIF?raw=true "During Game")
+
+### When the game ends (the below screenshot is of "Basic" difficulty level)
+![When the game ends](/screenshots/End_Game.GIF?raw=true "End Game")
+
 ## Languages/Frameworks Used - 
 
 1) JavaScript  
@@ -15,7 +33,7 @@ A lightweight type-racing game (played against computer) built with JavaScript a
 **2. Design** - Angular's routing technique is not used in this project. Instead this project just removes/hides the various DOM elements, thus maintaining the same URL throughout.<br/>
 **3. Implementation** - Refer to the "**Languages/Frameworks Used**" section above to know the technologies used in the implementation of this project.<br/>
 **4. Testing** - The tests can be found [here](https://github.com/gbelwariar/TypeRacer/tree/master/test) and [here](https://github.com/gbelwariar/TypeRacer/tree/master/test/jasmine). These are organized in a similar fashion as the main implementation files.<br/>
-**5. Maintenance** - Any suggestions to improve the projects are welcome on gbelwariar@gmail.com.<br/>
+**5. Maintenance** - Any suggestions to improve the projects are welcome on gbelwariar@gmail.com or can directly send a PR.<br/>
 
 ## Components of the Projects
 
@@ -30,4 +48,4 @@ Name of the Component                                                           
 
 1) Use simpler words to form the challenge string. Currently, all the words are valid English words but some of them are very uncommon and unheard words which makes it harder for the user to type.
 2) Use Angular's Routing Technique to direct different pages of this application to different URLs. Currently, the pages are simply removed from the DOM to show up a new page which makes it harder to develop and track the flow of control and data between different pages.
-
+3) Simplify some of the stylesheets.
