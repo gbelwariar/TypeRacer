@@ -39,7 +39,7 @@ function GamePlayCtrl($interval, $scope, dictionaryService) {
 
 
 /**
- * Initialzes or reset the game.
+ * Initializes or reset the game.
  * 
  * @private
  */
