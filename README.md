@@ -6,7 +6,7 @@ A lightweight type-racing game (played against computer) built with JavaScript a
 
 Download the repository - [TypeRacer](https://github.com/gbelwariar/TypeRacer) and execute the HTML file - **type-racer.html** (*TypeRacer/public_html/type-racer.html*) through the local host using any browser.
 
-## Screenshots
+## Screenshots (when played in Chrome Browser)
 
 ### → Home Page
 <kbd>![Home Page](/screenshots/Home_Page.GIF?raw=true "Home Page")<kbd>
