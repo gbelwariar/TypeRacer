@@ -28,7 +28,7 @@ DictionaryService.prototype.getRandomWord = function() {
  * Returns a random sentence formed from the dictionary of the words.
  * All the words of the sentence are in lower case.
  * 
- * @param {number}
+ * @param {number} The count of words in the desired sentence.
  * @return {string}
  */
 DictionaryService.prototype.getRandomSentence = function(opt_wordCount) {
