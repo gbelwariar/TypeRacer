@@ -29,7 +29,7 @@ Download the repository - [TypeRacer](https://github.com/gbelwariar/TypeRacer) a
 
 ## Phases of the Projects
 
-**1. Requirements** - Any browser would work. An internet connection is not reuired.<br/>
+**1. Requirements** - Any browser would work. An internet connection is not required.<br/>
 **2. Design** - Angular's routing technique is not used in this project. Instead the current implementation just removes/hides the various DOM elements, thus maintaining the same URL throughout the game.<br/>
 **3. Implementation** - Refer to the "**Languages/Frameworks Used**" section above to know the technologies used in this project.<br/>
 **4. Testing** - The tests can be found [here](https://github.com/gbelwariar/TypeRacer/tree/master/test) and [here](https://github.com/gbelwariar/TypeRacer/tree/master/test/jasmine). These are organized in a similar fashion as the main implementation files.<br/>
