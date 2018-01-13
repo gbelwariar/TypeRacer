@@ -9,16 +9,20 @@ Download the repository - [TypeRacer](https://github.com/gbelwariar/TypeRacer) a
 ## Screenshots (when played in Chrome Browser)
 
 ### → Home Page
-<kbd>![Home Page](/screenshots/Home_Page.GIF?raw=true "Home Page")<kbd>
+
+<img src="screenshots/Home_Page.GIF" class="img-responsive" alt="Home Page"> 
 
 ### → Before the game starts
-<kbd>![Before the game starts](/screenshots/Before_Game.GIF?raw=true "Before Game")<kbd>
+
+<img src="screenshots/Before_Game.GIF" class="img-responsive" alt="Before Game"> 
 
 ### → During the game (the below screenshot is of "Basic" difficulty level)
-<kbd>![During the game](/screenshots/During_Game.GIF?raw=true "During Game")<kbd>
+
+<img src="screenshots/During_Game.GIF" class="img-responsive" alt="During Game"> 
 
 ### → When the game ends (the below screenshot is of "Basic" difficulty level)
-<kbd>![When the game ends](/screenshots/End_Game.GIF?raw=true "End Game")<kbd>
+
+<img src="screenshots/End_Game.GIF" class="img-responsive" alt="End Game"> 
 
 ## Languages/Frameworks Used - 
 
