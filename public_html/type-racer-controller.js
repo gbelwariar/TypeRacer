@@ -1,5 +1,4 @@
 function TypeRacerCtrl($scope) {
-    this.selectedLevelName;
     this.selectedLevelSpeed;
     this.playerName;
     
@@ -20,24 +19,6 @@ function TypeRacerCtrl($scope) {
         ];
         this.shouldShowRacingPage = false;
     };
-    
-    $scope.$watch(
-            (function() {return this.selectedLevelName;}).bind(this),
-            (function(newVal, oldVal) {
-                if (newVal !== oldVal) {
-                    for (var index=0; index<this.levels.length; index++) {
-                        for (var key in this.levels[index]) {
-                            if (this.levels[index].hasOwnProperty(key)
-                                    && key==='levelName'
-                                    && this.levels[index][key] 
-                                    === this.selectedLevelName) {
-                                this.selectedLevelSpeed =
-                                        this.levels[index]['charsPerSecond'];
-                            }
-                        }
-                    }
-                }
-            }).bind(this));
 }
 
 
