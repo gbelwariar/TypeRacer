@@ -30,9 +30,9 @@
                     <div ng-repeat='level in typeRacerCtrl.levels'>
                         <label>
                             <input name='difficultyLevel' type='radio'
-                                   value='{{level.levelName}}'
-                                   ng-model='typeRacerCtrl.selectedLevelName'
-                                   required='!typeRacerCtrl.selectedLevelName'>
+                                   value='{{level.charsPerSecond}}'
+                                   ng-model='typeRacerCtrl.selectedLevelSpeed'
+                                   required='!typeRacerCtrl.selectedLevelSpeed'>
                             {{level.levelName}}
                         </label>
                     </div>
