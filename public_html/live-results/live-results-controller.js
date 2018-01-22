@@ -1,4 +1,4 @@
-function LiveResultsCtrl($scope) {
+function LiveResultsCtrl() {
     this.challengeString;
     this.computerInput;
     this.humanInput;
@@ -52,4 +52,4 @@ function LiveResultsCtrl($scope) {
 
 angular
         .module('typeRacer')
-        .controller('LiveResultsCtrl', ['$scope', LiveResultsCtrl]);
+        .controller('LiveResultsCtrl', LiveResultsCtrl);
