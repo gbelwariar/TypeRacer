@@ -4,7 +4,7 @@ A lightweight type-racing game (played against computer) built with JavaScript a
 
 ## How to play the game 
 
-Download the repository - [TypeRacer](https://github.com/gbelwariar/TypeRacer) and execute the HTML file - **type-racer.html** (*TypeRacer/public_html/type-racer.html*) through a local hosting server(to avoid [this](https://stackoverflow.com/questions/10752055/cross-origin-requests-are-only-supported-for-http-error-when-loading-a-local) error) using any browser(*I prefer to bring up the server through Netbeans directly.*\)
+Download the repository - [TypeRacer](https://github.com/gbelwariar/TypeRacer) and run **type-racer.html** (*TypeRacer/public_html/type-racer.html*) by serving it from a server using any browser(*I prefer to bring up the in-built server embedded in IDEs like - Netbeans to avoid setting up a Node.js server. A server is required to avoid [this](https://stackoverflow.com/questions/10752055/cross-origin-requests-are-only-supported-for-http-error-when-loading-a-local) error*).
 
 ## Screenshots (when played in Chrome Browser)
 
