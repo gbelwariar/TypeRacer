@@ -24,12 +24,14 @@ Download the repository - [TypeRacer](https://github.com/gbelwariar/TypeRacer) a
 
 <img src="screenshots/End_Game.GIF" class="img-responsive" alt="End Game"> 
 
+
 ## Languages/Frameworks Used - 
 
 1) JavaScript  
 2) AngularJS (1.x)
-3) HTML
-4) CSS
+3) [Jasmine](https://jasmine.github.io/) (For unit-testing)
+4) HTML
+5) CSS
 
 ## Phases of the Projects
 
