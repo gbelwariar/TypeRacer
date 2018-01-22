@@ -20,20 +20,4 @@ describe('TypeRacerCtrl', function() {
         ctrl.showRacingPage(false);
         expect(ctrl.shouldShowRacingPage).toBeFalsy();        
     });
-    
-    it(
-       'should watch the radio options for selecting difficulty level and ' +
-       'correpsondingly update the difficulty level speed',
-       function() {
-           ctrl.$onInit();
-           scope.$apply();
-           expect(ctrl.selectedLevelName).toBeUndefined();
-           expect(ctrl.selectedLevelSpeed).toBeUndefined();
-           ctrl.selectedLevelName = 'Beginner';
-           scope.$apply();
-           expect(ctrl.selectedLevelSpeed).toBe(3);
-           ctrl.selectedLevelName = 'Expert';
-           scope.$apply();
-           expect(ctrl.selectedLevelSpeed).toBe(9);
-       });
 });
